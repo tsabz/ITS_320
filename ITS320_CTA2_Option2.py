@@ -21,13 +21,13 @@ class Year:
 
 class Starting_Odometer:
     print('What was your starting odemeter reading: ')
-    a_odometer = input()
+    a_odometer = int(input())
     car['Starting Odometer'] = a_odometer
 
 
 class Ending_Odometer:
     print('What is your ending odometer reading: ')
-    b_Odometer = input()
+    b_Odometer = int(input())
     car['Ending Odometer'] = b_Odometer
 
 
