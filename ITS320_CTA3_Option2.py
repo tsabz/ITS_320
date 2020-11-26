@@ -1,5 +1,9 @@
+print("what is your weekly income?")
+income = int(input())
+
+
 def avgTax():
-    print("hello")
+    print(income)
 
 
 def main():
