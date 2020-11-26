@@ -8,21 +8,21 @@ def ferrari_value():
     if year < 1962:
         print('Was not made yet')
     elif year <= 1964:
-        print('Ferrari value during year', year, 'will be', value[0])
+        print('Ferrari 250 GTO value during year', year, 'will be', value[0])
     elif year <= 1968:
-        print('Ferrari value during year', year, 'will be', value[1])
+        print('Ferrari 250 GTO value during year', year, 'will be', value[1])
     elif year <= 1971:
-        print('Ferrari value during year', year, 'will be', value[2])
+        print('Ferrari 250 GTO value during year', year, 'will be', value[2])
     elif year <= 1975:
-        print('Ferrari value during year', year, 'will be', value[3])
+        print('Ferrari 250 GTO value during year', year, 'will be', value[3])
     elif year <= 1980:
-        print('Ferrari value during year', year, 'will be', value[4])
+        print('Ferrari 250 GTO value during year', year, 'will be', value[4])
     elif year <= 1985:
-        print('Ferrari value during year', year, 'will be', value[5])
+        print('Ferrari 250 GTO value during year', year, 'will be', value[5])
     elif year <= 2012:
-        print('Ferrari value during year', year, 'will be', value[6])
+        print('Ferrari 250 GTO value during year', year, 'will be', value[6])
     elif year <= 2014:
-        print('Ferrari value during year', year, 'will be', value[7])
+        print('Ferrari 250 GTO value during year', year, 'will be', value[7])
 
 
 def main():
