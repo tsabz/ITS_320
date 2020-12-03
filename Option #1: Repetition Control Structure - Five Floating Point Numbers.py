@@ -11,15 +11,15 @@ values_dict = {
 
 def Enter_grades():
     print('Please enter your grade for Module 1:')
-    values_dict['Module 1'] = int(input())
+    values_dict['Module 1'] = int(float(input()))
     print('Please enter your grade for Module 2:')
-    values_dict['Module 2'] = int(input())
+    values_dict['Module 2'] = int(float(input()))
     print('Please enter your grade for Module 3:')
-    values_dict['Module 3'] = int(input())
+    values_dict['Module 3'] = int(float(input()))
     print('Please enter your grade for Module 4:')
-    values_dict['Module 4'] = int(input())
+    values_dict['Module 4'] = int(float(input()))
     print('Please enter your grade for Module 5:')
-    values_dict['Module 5'] = int(input())
+    values_dict['Module 5'] = int(float(input()))
 
 
 def Average():
@@ -34,12 +34,12 @@ def Average():
 def min_max():
     # min numbers
     minimum = min(values_dict.values())
-    print('Your minimum score was ' +
+    print('Your lowest score was ' +
           min(values_dict) + ':')
     print(float(minimum))
     # max numbers
     maximum = max(values_dict.values())
-    print('Your maximum score was ' + max(values_dict) + ':')
+    print('Your highest score was ' + max(values_dict) + ':')
     print(float(maximum))
 
 
