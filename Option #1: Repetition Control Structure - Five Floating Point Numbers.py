@@ -28,13 +28,26 @@ def Average():
         avg += value
     avg = avg / len(values_dict)
     print('Your average score is:')
-    print(avg)
+    print(float(avg))
+
+
+def min_max():
+    # min numbers
+    minimum = min(values_dict.values())
+    print('Your minimum score was ' +
+          min(values_dict) + ':')
+    print(float(minimum))
+    # max numbers
+    maximum = max(values_dict.values())
+    print('Your maximum score was ' + max(values_dict) + ':')
+    print(float(maximum))
 
 
 def main():
     Enter_grades()
     print(values_dict)
     Average()
+    min_max()
 
 
 if __name__ == "__main__":
