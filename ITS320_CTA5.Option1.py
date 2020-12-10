@@ -4,13 +4,14 @@
 # In the main method, prompt the user for the three strings.
 
 def string_reverse(first, second, third):
-    return first + second + third
+    reverser = (first + second + third)[::-1]
+    return reverser
 
 
 def main():
-    first = input('First string: ')[::-1]
-    second = input('Second string: ')[::-1]
-    third = input('Three string: ')[::-1]
+    first = input('First string: ')
+    second = input('Second string: ')
+    third = input('Three string: ')
     reverse = string_reverse(first, second, third)
     # string_reverse(first, second, third)
     print('This is your sentence reversed:', reverse)
