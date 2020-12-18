@@ -28,11 +28,8 @@ def cartesian():
         l = int(input("Enter number for list b: "))
         b_lst.append(l)
 
-    a = a_lst
-    b = b_lst
-
     # cartesian method, one liner for loop, looping through list a and b of the users input
-    cart_list = [(i, j) for i in a for j in b]
+    cart_list = [(i, j) for i in a_lst for j in b_lst]
     print(cart_list)
 
 
