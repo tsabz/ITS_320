@@ -1,11 +1,27 @@
-def age_times_twenty():
-    user_age = int(input('Enter age:'))
-    print(user_age * 20)
-    # return
+def age_times_twenty(user_age):
+    return user_age * 20
 
 
-age_times_twenty()
+user_age = int(input('Enter age:'))
+print(age_times_twenty(user_age))
 
+
+# def age_times_twenty(user_age):
+#     age = user_age * 20
+#     print(age)
+
+
+# user_age = int(input('Enter age:'))
+# age_times_twenty(user_age)
+
+# def age_times_thirty():
+
+#     user_age = int(input('Enter age:'))
+
+#     print(user_age * 30)
+
+
+# age_times_thirty()
 
 # def ebay_fee(sell_price):
 #     """Returns the fees charged by ebay.com given the selling
