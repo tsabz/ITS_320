@@ -111,7 +111,39 @@
 # print('Max #:', max_num)
 
 
-my_dict = dict(bananas=1.59, fries=2.39, burger=3.50, sandwich=2.99)
-my_dict.update(dict(soda=1.49, burger=3.69))
-burger_price = my_dict.get('burger', 0)
-print(burger_price)
+# my_dict = dict(bananas=1.59, fries=2.39, burger=3.50, sandwich=2.99)
+# my_dict.update(dict(soda=1.49, burger=3.69))
+# burger_price = my_dict.get('burger', 0)
+# print(burger_price)
+# user_input = input('Enter numbers:')
+# tokens = user_input.split()  # Split into separate strings
+
+# nums = []
+# for token in tokens:
+#     nums.append(int(token))
+
+# max_num = None
+# for num in nums:
+#     if (max_num == None) and (num % 2 == 0):
+#         max_num = num
+#     elif (max_num != None) and (num > max_num) and (num % 2 == 0):
+#         max_num = num
+
+# print('Max #:', max_num)
+
+
+# class Time:
+# time1 = Time()  # Create an instance of the Time class called time1
+# time1.hours = 7
+# time1.minutes = 30
+
+# time2 = Time()  # Create a second instance called time2
+# time2.hours = 12
+# time2.minutes = 45
+
+# print('%d hours and %d minutes' % (time1.hours, time2.minutes))
+
+
+# def __init__(self):
+#     self.hours = 0
+#     self.minutes = 0
