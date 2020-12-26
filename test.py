@@ -36,19 +36,38 @@ class Automobile:
             car._Automobile__update_make(self, make)
         if answer == '2':
             car._Automobile__update_model(self, model)
+        if answer == '3':
+            car._Automobile__update_color(self, color)
+        if answer == '4':
+            car._Automobile__update_year(self, year)
+        if answer == '5':
+            car._Automobile__update_mileage(self, mileage)
 
     def __update_make(self, vehicle, make):
         self.__make = input("What would you like your make to be: ")
-        # vehicles['Car'] = vehicle
         vehicles['Car']['Make'] = self.__make
         print(vehicles)
     
     def __update_model(self, vehicle, model):
         self.__model = input("What would you like your model to be: ")
-        # vehicles['Car'] = vehicle
         vehicles['Car']['Model'] = self.__model
         print(vehicles)
 
+    def __update_color(self, vehicle, color):
+        self.__color = input("What would you like your color to be: ")
+        vehicles['Car']['Color'] = self.__color
+        print(vehicles)
+    
+    def __update_year(self, vehicle, year):
+        self.__year = input("What would you like your year to be: ")
+        vehicles['Car']['Year'] = self.__year
+        print(vehicles)
+    
+    def __update_mileage(self, vehicle, mileage):
+        self.__mileage = input("What would you like your mileage to be: ")
+        vehicles['Car']['Mileage'] = self.__mileage
+        print(vehicles)
+    
     def __remove_vehicle_quest(self, vehicle):
         answer = input('Are you sure you would like to delete your vehicle?, press Y for yes or N for no: ')
         if answer == "Y":
