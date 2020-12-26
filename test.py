@@ -21,18 +21,25 @@ class Automobile:
         self.__mileage = input('What is the mileage of your car? ')
         vehicles['Car']['Mileage'] = self.__mileage
 
-
-    # def __add_attributes(self, vehicle, make):
-    #     vehicles['Car'] = vehicle
-        
-    #     vehicles['Car']['Make'] = self.__make
-
-    def __vehicle_options(self, vehicle, model, color, year, mileage):
+    def __vehicle_options(self, make, model, color, year, mileage):
         answer = input('To look at your vehicle press 1, to update your vehicle press 2, to delete your vehicle press 3: ')
         if answer == '1':
             print(vehicles)
+        if answer == '2':
+            car._Automobile__update_vehicles_options(self, make, model, color, year, mileage)
         if answer == '3':
             car._Automobile__remove_vehicle_quest(vehicles)
+
+    def __update_vehicles_options(self, vehicle, make, model, color, year, mileage):
+        answer = input("If you want to update make press '1', for color press '2', for year press '3', for mileage press '4': ")
+        if answer == '1':
+            car._Automobile__update_make(self, make)
+
+    def __update_make(self, vehicle, make):
+        self.__make = input("What would you like your make to be: ")
+        # vehicles['Car'] = vehicle
+        vehicles['Car']['Make'] = self.__make
+        print(vehicles)
     
     def __remove_vehicle_quest(self, vehicle):
         answer = input('Are you sure you would like to delete your vehicle?, press Y for yes or N for no: ')
