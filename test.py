@@ -12,10 +12,10 @@ class Automobile:
         vehicles['Car'] = self.__vehicle
 
     def __remove_vehicle_quest(self, vehicle):
-        print("Would you like to remove your vehicle?,if yes please press Y , if no please press N")
         answer = input()
         if answer == "Y":
             car._Automobile__remove_vehicle('delete')
+            print(vehicles)
         if answer == "N":
             print('No vehicle will be deleted', vehicles)
 
@@ -32,8 +32,9 @@ car = Automobile('vehicle 1',
 def main():
     car._Automobile__add_new_vehicle('add')
     print(vehicles)
+    print("Would you like to remove your vehicle?,if yes please press Y , if no please press N")
     car._Automobile__remove_vehicle_quest('delete')
-    print(vehicles)
+    
 
 
 if __name__ == '__main__':
