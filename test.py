@@ -1,4 +1,5 @@
 class Automobile:
+    #initilazes class variables
     def __init__(self, vehicle, make, model, color, year, mileage):
         self.__vehicle = vehicle
         self.__make = make
@@ -7,6 +8,7 @@ class Automobile:
         self.__year = int(year)
         self.__mileage = int(mileage)
 
+# creating vehicles dict 
     def __add_new_vehicle(self, make, model, color, year, mileage):
         self.__vehicle = input('What personal identification number would you like to give your car: ')
         vehicles['Car'] = {}
@@ -21,6 +23,7 @@ class Automobile:
         self.__mileage = input('What is the mileage of your car? ')
         vehicles['Car']['Mileage'] = self.__mileage
 
+# ask user what they would like to do, whether that be view, update or delete 
     def __vehicle_options(self, make, model, color, year, mileage):
         answer = input('To look at your vehicle press 1, to update your vehicle press 2, to delete your vehicle press 3: ')
         if answer == '1':
@@ -30,6 +33,7 @@ class Automobile:
         if answer == '3':
             car._Automobile__remove_vehicle_quest(vehicles)
 
+# ask user which specific attributes they would like to update
     def __update_vehicles_options(self, vehicle, make, model, color, year, mileage):
         answer = input("If you want to update make press '1', for model press '2', for color press '3', for year press '4', for mileage press '5': ")
         if answer == '1':
@@ -43,6 +47,7 @@ class Automobile:
         if answer == '5':
             car._Automobile__update_mileage(self, mileage)
 
+# all the update functions for the attributes
     def __update_make(self, vehicle, make):
         self.__make = input("What would you like your make to be: ")
         vehicles['Car']['Make'] = self.__make
@@ -67,7 +72,8 @@ class Automobile:
         self.__mileage = input("What would you like your mileage to be: ")
         vehicles['Car']['Mileage'] = self.__mileage
         print(vehicles)
-    
+ 
+ # ask user if they would like to delete vehicle 
     def __remove_vehicle_quest(self, vehicle):
         answer = input('Are you sure you would like to delete your vehicle?, press Y for yes or N for no: ')
         if answer == "Y":
@@ -76,6 +82,7 @@ class Automobile:
         if answer == "N":
             print('No vehicle will be deleted', vehicles)
 
+# delete vehicle function
     def __remove_vehicle(self, vehicle, answer):
         del vehicles['Car']
 
@@ -86,7 +93,6 @@ car = Automobile('vehicle 1',
 
 def main():
     car._Automobile__add_new_vehicle('lexus', 'es300','white', 1998, 35000)
-    # car._Automobile__add_attributes('vehicle', 'make')
     car._Automobile__vehicle_options('lexus', 'es300','white', 1998, 35000)
     
 
